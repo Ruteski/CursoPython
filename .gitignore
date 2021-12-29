@@ -127,3 +127,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+sessao2/.idea/misc.xml
+sessao2/.idea/sessao2.iml
