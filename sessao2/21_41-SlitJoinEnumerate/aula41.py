@@ -53,11 +53,28 @@
 # for indice, nome in lista2:
 #     print(indice, nome)
 
-lista = ['lincoln', 'joao', 'maria']
+# lista = ['lincoln', 'joao', 'maria']
 
 # for indice, nome in enumerate(lista):
 #     print(indice, nome)
 
-n1, n2, n3 = lista
+# n1, n2, n3 = lista
+#
+# print(n2)
 
-print(n2)
+
+lista = [
+    ['edu', 'joao', 'luiz'],
+    ['maria', 'aline', 'joana'],
+    ['helena', 'ed', 'lu'],
+]
+
+# enumerada = enumerate(lista)
+# print(enumerada)
+# print(list(enumerada))  # typecast
+
+# enumerada = list(enumerate(lista))
+# print(enumerada[0][1][2])
+
+for v1, v2 in enumerate(lista):
+    print(v1, v2)
