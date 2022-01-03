@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 sessao2/.idea/misc.xml
 sessao2/.idea/sessao2.iml
+.idea
