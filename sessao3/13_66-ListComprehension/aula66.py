@@ -27,3 +27,16 @@ ex7 = [v if v % 3 == 0 else f'{v} - não é' for v in l3]
 ex8 = [v if v % 3 == 0 and v % 8 == 0 else f'{v} - não é' for v in l3]
 
 print(ex8)
+
+"""
+exercicio
+string = '012345678901234567890123456789012345678901234567890123456789'
+"""
+
+string = '012345678901234567890123456789012345678901234567890123456789'
+n = 10
+lista = [string[i:i+n] for i in range(0, len(string), n)]
+retorno = '.'.join(lista)
+
+print(lista)
+print(retorno)
