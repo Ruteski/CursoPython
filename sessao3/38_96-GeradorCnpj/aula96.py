@@ -49,4 +49,6 @@ while True:
             print(f'{cnpj1} é inválido')
     elif menu == '3':
         break
+    else:
+        print('Favor escolher uma das opções informadas.')
 
