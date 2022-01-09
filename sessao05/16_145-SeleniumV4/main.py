@@ -8,9 +8,7 @@ from time import sleep
 # Caminho para a raiz do projeto
 ROOT_FOLDER = Path(__file__).parent.parent.parent
 # Caminho para a pasta onde o chromedriver está
-CHROME_DRIVER_PATH = ROOT_FOLDER / 'sessao05' / '15_144-SeleniumV4' / 'chromedriver.exe'
-
-print(CHROME_DRIVER_PATH)
+CHROME_DRIVER_PATH = ROOT_FOLDER / 'bin' / 'chromedriver'
 
 
 def make_chrome_browser(*options: str) -> webdriver.Chrome:
@@ -33,17 +31,17 @@ def make_chrome_browser(*options: str) -> webdriver.Chrome:
     return browser
 
 
-# if __name__ == '__main__':
-#     # Example
-#     options = ('--disable-gpu', '--no-sandbox',)
-#     browser = make_chrome_browser(*options)
-#
-#     # Como antes
-#     browser.get('https://www.google.com')
-#
-#     input_element = browser.find_element(By.NAME, 'q')
-#     input_element.send_keys('Python')
-#     sleep(3)
-#     input_element.send_keys(Keys.ENTER)
-#     sleep(3)
-#     browser.quit()
+if __name__ == '__main__':
+    # Example
+    options = ('--disable-gpu', '--no-sandbox',)
+    browser = make_chrome_browser(*options)
+
+    # Como antes
+    browser.get('https://www.google.com')
+
+    input_element = browser.find_element(By.NAME, 'q')
+    input_element.send_keys('Python')
+    sleep(3)
+    input_element.send_keys(Keys.ENTER)
+    sleep(3)
+    browser.quit()
