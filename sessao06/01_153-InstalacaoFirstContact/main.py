@@ -6,6 +6,34 @@ etc ...
 
 pip install pyqt5
 pip install PyQt5-stubs  ou  pip install PyQt5-stubs==5.15.2.0
+
+--- Codigo inicial para qualquer programa em QT
+import sys
+from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QGridLayout
+
+
+class Calculadora(QMainWindow):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.setWindowTitle('Calculadora')
+        self.setFixedSize(400,400)
+        self.cw = QWidget()
+        self.grid = QGridLayout(self.cw)
+
+
+
+        self.setCentralWidget(self.cw)
+
+
+
+if __name__ == '__main__':
+    qt = QApplication(sys.argv)
+    calc = Calculadora()
+    calc.show()
+    qt.exec_()
+
+
+
 """
 import sys
 from PyQt5.QtWidgets import QMainWindow, QApplication, QPushButton, QWidget, QGridLayout
