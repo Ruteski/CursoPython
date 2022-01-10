@@ -64,6 +64,23 @@ t1.join()
 print('Thread acabou!')
 """
 
+"""
+def vai_demorar(texto, tempo):
+    sleep(tempo)
+    print(texto)
+
+
+t1 = Thread(target=vai_demorar, args=('ola mundo 1', 10))
+t1.start()
+
+# verifica se a thread ainda esta rodando
+while t1.is_alive():
+    print('Esperando a thread...')
+    sleep(2)
+
+print('Thread acabou!')    
+"""
+
 
 class Ingressos:
     """
