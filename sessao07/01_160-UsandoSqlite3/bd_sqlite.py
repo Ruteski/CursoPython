@@ -18,11 +18,15 @@ try:
     # cursor.execute('update clientes set nome=:nome, peso=:peso where id=:id', {'nome': 'Fernando', 'peso': 97, 'id': 2})
     # conexao.commit()
 
-    cursor.execute('select * from clientes')
+    # cursor.execute('select * from clientes')
 
-    for linha in cursor.fetchall():
-        ident, nome, peso = linha
-        print(ident, nome, peso)
+    cursor.execute('drop table clientes')
+    conexao.commit()
+
+
+    # for linha in cursor.fetchall():
+    #     ident, nome, peso = linha
+    #     print(ident, nome, peso)
 
 finally:
     cursor.close()
