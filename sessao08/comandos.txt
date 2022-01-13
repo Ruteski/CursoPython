@@ -1,0 +1,15 @@
+- criar projeto django
+  django-admin startproject <nome projeto> .
+
+- iniciar servidor local
+  python manage.py runserver
+
+- criar um app
+  python manage.py startapp <nome do app(sessao/pagina)>
+  sempre que criar um app, é necessario registrar ele
+    - criar arquivo urls.py
+    - sessao08/settings.py -> INSTALLED_APPS
+    - sessao08/urls.py -> urlpatterns
+      - importar o include -> from django.urls import path, include
+    - criar pasta chamada templates
+      - criar uma pasta com o nome da app
